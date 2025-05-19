@@ -2,11 +2,11 @@
 
 ## Description
 
-This Image Gallery project is a responsive web application built with HTML, CSS, and vanilla JavaScript. It fetches high-quality photos from the Unsplash API based on user search queries or predefined categories. The gallery supports infinite scrolling, smooth animations, a light/dark theme toggle, and a lightbox feature to view images in full size.
+This Image Gallery project is a responsive web application built with **HTML**, **CSS**, and **vanilla JavaScript**. It fetches high-quality photos from the **Unsplash API** based on user search queries or predefined categories. The gallery supports infinite scrolling, smooth animations, a light/dark theme toggle, and a lightbox feature to view images in full size.
 
 ## Live Demo
 
-[](https://divya-anand-05.github.io/CodeAlpha_Image_Gallery/)
+[click here](https://divya-anand-05.github.io/CodeAlpha_Image_Gallery/)
 
 
 ## Features
@@ -37,7 +37,7 @@ This Image Gallery project is a responsive web application built with HTML, CSS,
 
 2. **Set up your API Key**
 
-   * Rename `.env.example` to `.env`
+   
    * Add your Unsplash Access Key:
 
      ```env
@@ -52,9 +52,13 @@ This Image Gallery project is a responsive web application built with HTML, CSS,
 
 ```
 image-gallery/
-├── index.html      
-├── styles.css      
-├── script.js       
+
+├── index.html
+      
+├── style.css
+     
+├── script.js
+       
 ├── README.md       
 
 ```
