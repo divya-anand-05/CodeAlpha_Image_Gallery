@@ -147,3 +147,9 @@ button:hover{
   max-width: 90%;
   max-height: 90%;
 }
+
+@media (min-width: 1200px) {
+  #gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
