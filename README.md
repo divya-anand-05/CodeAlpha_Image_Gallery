@@ -1,4 +1,4 @@
-# Image Gallery Project
+# Image Gallery 
 
 ## Description
 
