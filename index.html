@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 id="heading">Image Gallery</h1>
+    <div id="search-container">
+      <input type="text" id="search-input" placeholder="Search images...">
+      <button onclick="handleSearch()">Search</button>
+    </div>
+
+    <button onclick="toggleTheme()">Toggle Dark/Light</button>
+
+    <div id="categories">
+      <button onclick="searchCategory('nature')">Nature</button>
+      <button onclick="searchCategory('food')">Food</button>
+      <button onclick="searchCategory('technology')">Technology</button>
+      <button onclick="searchCategory('people')">People</button>
+      <button onclick="searchCategory('mountain')">Mountain</button>
+    </div>
+
+</header>
+    <div id="gallery"></div>
+
+    <div id="lightbox" onclick="this.style.display='none'">
+      <img id="lightbox-img" src="" alt="Expanded View">
+    </div>
+
+    
+  <script src="script.js"></script>
+</body>
+</html>
