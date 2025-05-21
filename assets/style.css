@@ -150,6 +150,12 @@ button:hover{
   max-height: 90%;
 }
 
+#loader{
+  height:80px;
+  text-align:center;
+  margin:20px 0;
+}
+
 @media (min-width: 1200px) {
   #gallery {
     grid-template-columns: repeat(4, 1fr);
