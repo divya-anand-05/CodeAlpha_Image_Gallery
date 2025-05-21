@@ -36,13 +36,20 @@ function searchCategory(cat){
   gallery.innerHTML='';
   loadImages();
 }
+
+function manualLoad(){
+  page++;
+  loadImages();
+}
+
 const infiniteObserver=new IntersectionObserver((entries)=>{
-  if(entries[0].isIntersecting){
+  if(entries.isIntersecting){
     page++;
     loadImages();
   }
-},{
-  rootMargin:'100px'
+else{
+  document.getElementById('loadMoreBtn').style.display='block';
+}
 });
 
 infiniteObserver.observe(loader);
