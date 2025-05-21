@@ -37,22 +37,12 @@ function searchCategory(cat){
   loadImages();
 }
 
-function manualLoad(){
-  page++;
-  loadImages();
-}
-
-const infiniteObserver=new IntersectionObserver((entries)=>{
-  if(entries.isIntersecting){
+window.addEventListener('scroll',()=>{
+  if(window.innerHeight+window.scrollY >= document.body.offsetHeight -300){
     page++;
     loadImages();
   }
-else{
-  document.getElementById('loadMoreBtn').style.display='block';
-}
 });
-
-infiniteObserver.observe(loader);
 
 const observer=new IntersectionObserver((entries)=>{
  entries.forEach(entry=>{
