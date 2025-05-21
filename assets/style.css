@@ -151,9 +151,10 @@ button:hover{
 }
 
 #loader{
-  height:80px;
+  height:100px;
   text-align:center;
-  margin:20px 0;
+  margin:40px auto;
+  background:none;
 }
 
 @media (min-width: 1200px) {
