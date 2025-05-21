@@ -36,13 +36,16 @@ function searchCategory(cat){
   gallery.innerHTML='';
   loadImages();
 }
-
-window.addEventListener('scroll',()=>{
-  if(window.innerHeight+window.scrollY >= document.body.offsetHeight - 100){
+const infiniteObserver=new IntersectionObserver((entries)=>{
+  if(entries[0].isIntersecting){
     page++;
     loadImages();
   }
+},{
+  rootMargin:'100px'
 });
+
+infiniteObserver.observe(loader);
 
 const observer=new IntersectionObserver((entries)=>{
  entries.forEach(entry=>{
