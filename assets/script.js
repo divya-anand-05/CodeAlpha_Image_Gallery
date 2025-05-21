@@ -38,7 +38,7 @@ function searchCategory(cat){
 }
 
 window.addEventListener('scroll',()=>{
-  if(window.innerHeight+window.scrollY >= document.body.offsetHeight -300){
+  if(window.innerHeight+window.scrollY >= document.body.offsetHeight - 100){
     page++;
     loadImages();
   }
